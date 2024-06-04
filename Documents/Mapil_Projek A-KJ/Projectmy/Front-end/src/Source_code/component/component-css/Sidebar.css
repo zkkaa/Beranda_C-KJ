@@ -1,0 +1,85 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 150px;
+  padding: 10px 14px;
+  background-color: var(--bg-cont);
+  overflow: hidden;
+  box-shadow: 0 0 10px grey;
+}
+
+nav .logo-apk {
+  display: flex;
+  padding: 5px;
+  border-bottom: 1px solid black;
+}
+
+nav .logo-image {
+  justify-content: center;
+}
+
+nav .logo-image img {
+  width: 65px;
+  margin-left: -4px;
+}
+
+nav .nama-apk {
+  text-align: center;
+  margin-top: 17px;
+  color: var(--txt1);
+}
+
+nav .menu-items {
+  height: 85%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menu-items li {
+  list-style: none;
+}
+
+nav a.active {
+  background-color: #6FB9E7;
+  font-weight: 500;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px grey;
+  color: #000000;
+}
+
+.menu-items li a {
+  display: block;
+  align-items: center;
+  margin-top: 0.5rem;
+  height: 80px;
+  border-radius: 15px;
+  color: grey;
+  text-decoration: none;
+}
+
+nav .menu-items li a:hover {
+  background-color: #6FB9E7;
+  box-shadow: 0 5px 10px grey;
+  color: #000000;
+  font-weight: 500;
+}
+
+.menu-items li a i {
+  font-size: 24px;
+  padding-top: 15px;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--blck);
+}
+
+.menu-items li a .ket {
+  display: list-item;
+  text-align: center;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+}

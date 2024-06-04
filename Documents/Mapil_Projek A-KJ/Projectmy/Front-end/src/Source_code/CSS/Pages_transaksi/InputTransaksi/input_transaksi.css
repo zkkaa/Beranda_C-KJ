@@ -1,0 +1,240 @@
+.cont_T-pelanggan_terdaftar {
+    position: absolute;
+    top: -130px;
+    right: 0;
+    display: block;
+    width: calc(100% - 510px);
+    height: 81vh;
+    margin: 15vh 21vw;
+    align-content: center;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 5px gray;
+    z-index: 9999;
+}
+
+.cont_T-pelanggan_terdaftar .pelanggan_terdaftar {
+    width: 94%;
+    height: 100%;
+    margin-left: 3%;
+}
+
+/* judul pembayaran */
+.pelanggan_terdaftar .judul_T-pel_terdaftar {
+    width: 100%;
+    height: 6.5vh;
+    padding-top: 1vh;
+}
+
+.judul_T-pel_terdaftar .terdaftar_judul {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* serch */
+.cont_T-pelanggan_terdaftar  .terdaftar_cari {
+    height: 11%;
+    line-height: 50px;
+    border-top: 2px solid #f3f3f3;
+    background-color: green;
+}
+
+.cont_T-pelanggan_terdaftar .terdaftar_cari .cari {
+    width: 100%;
+    display: flex; 
+    flex-direction: row;
+    align-items: center;
+    margin-top: 2vh;
+    font-size: 16px;
+}
+
+.cont_T-pelanggan_terdaftar .cari .terdaftar_input-cari {
+    width: 78vw;
+    height: 35px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    margin-left: -5px;
+    padding-left: 5px;
+    padding-right: 10px;
+}
+
+.cont_T-pelanggan_terdaftar .cari .btn_cari {
+    width: 4vw;
+    height: 35px;
+    border: 1px solid black;
+    text-align: center;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+
+.cont_T-pelanggan_terdaftar .cari .btn_cari:hover {
+    color: black;
+}
+
+.cont_T-pelanggan_terdaftar .cari .btn_cari:active {
+    background-color: #f3f3f3;
+}
+
+.cont_T-pelanggan_terdaftar  .terdaftar_cari .hasil{
+    width: 94%;
+    display: block;
+    /* input: none; */
+    flex-direction: column;
+    margin-top: 1rem;
+    position: absolute;
+    padding-left: 4%;
+    background-color: red;
+    overflow-y : scroll;
+    max-height: 300px;
+}
+
+.cont_T-pelanggan_terdaftar  .terdaftar_cari .hasil:valid {
+    display: inline;
+    input: none;
+}
+
+/* btn-tambah */
+.cont_T-pelanggan_terdaftar .terdaftar_btn {
+    width: 10vw;
+    height: 4vh;
+}
+
+.terdaftar_btn .btn_pelanggan-terdaftar {
+    height: 100%;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    align-items: center;
+    text-decoration: none;
+    color: grey;
+    border: none;
+    border-radius: 20px;
+    background-color: #8FC6E9;
+}
+
+/* nama nomer alamat */
+.cont_T-pelanggan_terdaftar .terdaftar_identitas {
+    height: 17vh;
+    width: 100%;
+    margin-top: 1vh;
+    border-bottom: 1px solid grey;
+}
+
+.cont_T-pelanggan_terdaftar .terdaftar_identitas .divnama,
+.cont_T-pelanggan_terdaftar .terdaftar_identitas .divnomer,
+.cont_T-pelanggan_terdaftar .terdaftar_identitas .divalamat {
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    align-items: center;
+}
+
+.terdaftar_identitas .divnama .nama_p,
+.terdaftar_identitas .divnomer .nomer-telepon_p,
+.terdaftar_identitas .divalamat .alamat_p {
+    width: 10vw;
+    font-size: 16px;
+    color: #000000;
+}
+
+.terdaftar_identitas .divnama .input_T_nama,
+.terdaftar_identitas .divnomer .input_T_nomer,
+.terdaftar_identitas .divalamat .input_T_alamat {
+    width: 100%;
+    height: 100%;
+    align-content: center;
+    border-radius: 10px;
+    padding-left: 0.5vw;
+}
+
+.terdaftar_identitas .divnama .input_T_nama input,
+.terdaftar_identitas .divnomer .input_T_nomer input,
+.terdaftar_identitas .divalamat .input_T_alamat input {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    border-radius: 10px;
+    color: #000000;
+    border: none;
+    background-color: #ffffff;
+    padding-left: 0.5vw;
+}
+
+/* validasi bayar */
+.cont_T-pelanggan_terdaftar .pelanggan_terdaftar .terdaftar_pembayaran {
+    width: 100%;
+    height: 30vh;
+    padding-top: 1vh;
+    border-top: 2px solid #f3f3f3;
+    /* background-color: red; */
+}
+
+/* total &nominal */
+.terdaftar_pembayaran .div_total_harga-pt,
+.terdaftar_pembayaran .div_nominal_bayar-pt {
+    width: 100%;
+    height: 8vh;
+    margin-top: 1vh;
+}
+
+.terdaftar_pembayaran .span_input_t {
+    font-size: 16px;
+    color: black;
+}
+
+.terdaftar_pembayaran .div_total_harga-pt .input_tagihan-pt,
+.terdaftar_pembayaran .div_nominal_bayar-pt .input_nominal-pt,
+.terdaftar_pembayaran .div_diskon_pajak-pt .div_diskon-pt .input_diskon-pt,
+.terdaftar_pembayaran .div_diskon_pajak-pt .div_pajak-pt .input_pajak-pt {
+    border: 1px solid black;
+    width: 100%;
+    height: 4vh;
+    font-size: 16px;
+    padding-left: 0.5vw;
+    border-radius: 5px;
+    margin-top:0.5vh;
+}
+
+/* diskon & pajak */
+.terdaftar_pembayaran .div_diskon_pajak-pt {
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    margin-top: 1vh;
+    justify-content: space-between;
+}
+
+.terdaftar_pembayaran .div_diskon_pajak-pt .div_diskon-pt,
+.terdaftar_pembayaran .div_diskon_pajak-pt .div_pajak-pt {
+    width: 49%;
+    height: 100%;
+}
+
+/* btn */
+.pelanggan_terdaftar .btn_simpan-pelanggan_t {
+    width: 100%;
+    height: 5vh;
+    border-radius: 15px;
+}
+
+.pelanggan_terdaftar .btn_simpan-pelanggan_t .simpan-pelanggan_t {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: #5BC85B;
+}
+
+.pelanggan_terdaftar .btn_simpan-pelanggan_t .simpan-pelanggan_t:hover {
+    color: black;
+}
+
+.pelanggan_terdaftar .btn_simpan-pelanggan_t .simpan-pelanggan_t:active {
+    color: #5BC85B;
+    border: 1px solid #5BC85B;
+    background-color: #ffffff;
+}

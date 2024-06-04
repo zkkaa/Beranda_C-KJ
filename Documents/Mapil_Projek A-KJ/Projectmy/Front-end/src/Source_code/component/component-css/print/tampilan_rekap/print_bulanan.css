@@ -1,0 +1,142 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tahoma";
+    }
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .tampilan_print_bulanan {
+        width: 297mm;
+        min-height: 210mm;
+        padding: 15mm;
+        margin: 5mm auto;
+        outline: 3px #f3f3f3 solid;
+        background: white;
+    }
+    .page_print {
+        height: 195mm;
+        margin: -8mm;
+    }
+    
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    @media print {
+        html, body {
+            width: 297mm;
+            height: 210mm;        
+        }
+        .tampilan_print_bulanan {
+            margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+        }
+    }
+
+    /* judul */
+    .page_print .judul1_print {
+        display: flex;
+        height: 15%;
+        width: 100%;
+        border-style: dotted;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .logo_print {
+        position: relative;
+        height: 100%;
+        width: 11%;
+        margin-left: 10%;
+    }
+
+    .judul1_print .logo_print img {
+        width: 100%;
+    }
+
+    .judul1_print .judul_print {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding-right: 18.5%;
+        padding-top: 0.5%;
+    }
+
+    .judul_print .judul_print_unit {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .judul_print .judul_print_upj {
+        width: 100%;
+        font-size: 22px;
+        font-weight: bold;
+    }
+
+    .judul_print .judul_print_alamat {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* 2 */
+    .page_print .judul2_print  {
+        height: 10%;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+    }
+
+    .judul2_print .jenis_laporan_print {
+        width: 100%;
+        font-size: 18px;
+    } 
+    
+    .judul2_print .tanggal_print {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    /* table */
+    .page_print .tabel_print_bulanan {
+        width: 100%;
+    }
+
+    .page_print .tabel_print_bulanan .tbl_bulanan {
+        width: 100%;
+        height: 100%;
+        font-size: 15px;
+        border-collapse: collapse;
+    }
+
+    .tbl_bulanan th {
+        background-color: rgb(233, 233, 233);
+    }
+    
+    .tbl_bulanan th,
+    .tbl_bulanan td {
+        text-align: center;
+        line-height: 35px;
+        border: 1px solid black;
+    }
+
+    .tbl_bulanan .total_pemasukan {
+        text-align: start;
+        padding-left: 2%;
+    }
+    .tbl_bulanan .total_pengeluaran {
+        text-align: start;
+        padding-left: 2%;
+    }

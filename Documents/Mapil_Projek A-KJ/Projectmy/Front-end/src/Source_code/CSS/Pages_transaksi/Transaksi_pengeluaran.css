@@ -1,0 +1,260 @@
+.cont_transaksi {
+  position: relative;
+  margin: 115px 30px 30px 180px;
+  width: calc(100% - 210px);
+  height: 81vh;
+}
+
+/* menu */
+.cont_transaksi .transaksi_menu {
+  display: flex;
+  justify-content: center;
+}
+
+.transaksi_menu li {
+  list-style: none;
+}
+
+.transaksi_menu a {
+  display: flex;
+  text-decoration: none;
+  justify-content: center;
+  padding-top: 2vh;
+  color: grey;
+}
+
+.transaksi_menu .div_pemasukan_t {
+  width: 50%;
+  height: 7vh;
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  background-color: rgba(83, 189, 255, 0.5);
+}
+
+.transaksi_menu .div_pengeluaran_t {
+  width: 50%;
+  height: 7vh;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  background-color: rgba(83, 189, 255, 0.5);
+}
+
+.transaksi_menu #active6 {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.div_pengeluaran_t .pengeluaran_t:hover {
+  width: 100%;
+  height: 7vh;
+  background-color: rgba(38, 138, 201, 0.5);
+  color: #000000;
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
+/* tbl_inp-pengeluaran */
+.cont_transaksi .tbl_inp-pengeluaran {
+  width: 100%;
+  height: 89%;
+  margin-top: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px grey;
+}
+
+.inp-pengeluaran {
+  width: 100%;
+  height: 55vh;
+  overflow: scroll;
+}
+
+.tbl_inp-pengeluaran .pengeluaran-tabel {
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.tbl_inp-pengeluaran .pengeluaran-tabel td {
+  height: 6vh;
+  border-bottom: 1px solid black;
+}
+
+.tbl_inp-pengeluaran .pengeluaran-tabel .tabel_judul-pengeluaran {
+  position: relative;
+  height: 6vh;
+  background-color: grey;
+}
+
+.tabel_judul-pengeluaran .nama_transaksi_pengeluaran {
+  min-width: 12vw;
+}
+
+.tabel_judul-pengeluaran .barangjasa_transaksi_pengeluaran {
+  min-width: 14vw;
+}
+
+.tabel_judul-pengeluaran .uraian_transaksi_pengeluaran {
+  min-width: 20vw;
+}
+
+.tabel_judul-pengeluaran .kuantitas_transaksi_pengeluaran {
+  min-width: 5vw;
+}
+
+.tabel_judul-pengeluaran .harga_transaksi_pengeluaran {
+  min-width: 8vw;
+}
+
+.nama_pengeluaran .nama_tp,
+.barangjasa_pengeluaran .barangjasa_tp,
+.uraian_pengeluaran .uraian_tp,
+.harga_pengeluaran .harga_tp,
+.kuantitas_pengeluaran .kuantitas {
+  width: 90%;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.nama_pengeluaran .nama_tp:focus,
+.barangjasa_pengeluaran .barangjasa_tp:focus,
+.uraian_pengeluaran .uraian_tp:focus,
+.harga_pengeluaran .harga_tp:focus,
+.kuantitas_pengeluaran .kuantitas {
+  outline: none;
+}
+
+.kurangpengeluaran,
+.tambahpengeluaran {
+  width: 2vw;
+  height: 4vh;
+  font-size: 18px;
+  border-radius: 5px;
+  border: none;
+  margin: 0.5vh;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.kurangpengeluaran {
+  color: red;
+}
+
+.tambahpengeluaran {
+  color: #5bc85b;
+}
+
+.kurangpengeluaran:active,
+.tambahpengeluaran:active {
+  color: black;
+}
+.tambahpengeluaran:hover {
+  background-color: #ffffff;
+  color: #5bc85b;
+}
+.kurangpengeluaran:hover {
+  background-color: #ffffff;
+  color: red;
+}
+
+/* pesan */
+.cont_transaksi .transaksi_pengeluaran {
+  width: 100%;
+  height: 17.5vh;
+  border-top: 1px solid black;
+}
+
+/* harga */
+.transaksi_pengeluaran .div_jumlah-harga-pengeluaran {
+  display: flex;
+  height: 50%;
+  width: 100%;
+}
+
+.div_jumlah-harga-pengeluaran .div_span {
+  height: 100%;
+  width: 50%;
+  align-content: center;
+}
+
+.div_jumlah-harga-pengeluaran .div_span span {
+  font-size: 22px;
+  padding-left: 4vw;
+}
+
+.div_jumlah-harga-pengeluaran .div_bayar-pengeluaran {
+  height: 100%;
+  width: 50%;
+  align-content: center;
+  text-align: end;
+}
+
+.div_jumlah-harga-pengeluaran .div_bayar-pengeluaran span {
+  font-size: 22px;
+  padding-right: 4vw;
+}
+
+/* btn */
+.transaksi_pengeluaran .div_pesan-pengeluaran {
+  display: flex;
+  height: 50%;
+  width: 100%;
+  border-top: 1px solid black;
+}
+
+.div_pesan-pengeluaran .pengeluaran_batal {
+  height: 100%;
+  width: 50%;
+  align-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.div_pesan-pengeluaran .pengeluaran_batal button {
+  width: 100%;
+  height: 5vh;
+  border-radius: 10px;
+  border: 1px solid red;
+  color: red;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.div_pesan-pengeluaran .pengeluaran_batal button:active {
+  border: none;
+  color: #ffffff;
+  background-color: red;
+}
+
+.div_pesan-pengeluaran .pengeluaran_simpan {
+  height: 100%;
+  width: 50%;
+  align-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.div_pesan-pengeluaran .pengeluaran_simpan button {
+  width: 100%;
+  height: 5vh;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  background-color: #5bc85b;
+}
+
+.div_pesan-pengeluaran .pengeluaran_simpan button:active {
+  border: 1px solid #5bc85b;
+  color: #5bc85b;
+  background-color: #ffffff;
+}
+

@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap");
+:root {
+  /* ------COLOR------ */
+  --bg: #fefbfb;
+  --bg-cont: #ffffff;
+  --txt1: #5e95fe;
+  --block-actv: #61e16e;
+  --blck: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg);
+}
+
+.navigasi {
+  position: fixed;
+  top: 0;
+  left: 150px;
+  height: 14vh;
+  max-height: 90px;
+  min-height: 85px;
+  width: calc(100% - 150px);
+  background-color: var(--bg-cont);
+  /* overflow: hidden; */
+  box-shadow: 10px 0 10px grey;
+  display: flexbox;
+  z-index: 99;
+  overflow: hidden;
+}
+
+.navigasi div {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.8px;
+}
+
+.navigasi div .tanggal {
+  align-items: center;
+}
+
+.navigasi div .tanggal a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.navigasi div .tanggal a span {
+  font-size: 20px;
+}
+
+.navigasi div .user {
+  display: flex;
+  align-items: center;
+}
+
+.navigasi div .user div {
+  justify-content: center;
+  padding-right: 5px;
+}
+
+.navigasi div .user div i {
+  font-size: 35px;
+  margin-top: 10px;
+}
+
+.navigasi div .user span {
+  font-size: 20px;
+  margin-top: 2px;
+}

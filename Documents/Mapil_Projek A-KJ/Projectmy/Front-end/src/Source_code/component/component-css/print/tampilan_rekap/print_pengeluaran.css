@@ -1,0 +1,197 @@
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FAFAFA;
+    font: 12pt "Tahoma";
+    }
+    * {
+        box-sizing: border-box;
+        -moz-box-sizing: border-box;
+    }
+    .tampilan_print_peng {
+        width: 104mm;
+        min-height: 148mm;
+        padding: 15mm;
+        margin: 5mm auto;
+        outline: 3px #f3f3f3 solid;
+        background: white;
+    }
+    .page_print_peng {
+        height: 135mm;
+        margin: -8mm;
+    }
+    
+    @page {
+        size: A4;
+        margin: 0;
+    }
+    @media print {
+        html, body {
+            width: 104mm;
+            height: 148mm;        
+        }
+        .tampilan_print_peng {
+            margin: 0;
+            border: initial;
+            border-radius: initial;
+            width: initial;
+            min-height: initial;
+            box-shadow: initial;
+            background: initial;
+            page-break-after: always;
+        }
+    }
+
+    /* judul */
+    .page_print_peng .judul1_print_peng {
+        display: flex;
+        height: 15%;
+        width: 100%;
+        border-style: dotted;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .logo_print_peng {
+        position: relative;
+        height: 100%;
+        width: 20%;
+    }
+
+    .judul1_print_peng .logo_print_peng img {
+        width: 100%;
+        padding-top: 10%;
+    }
+
+    .judul1_print_peng .judul_print_peng {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        padding-right: 8%;
+        padding-top: 2%;
+    }
+
+    .judul_print_peng .judul_print_unit {
+        width: 100%;
+        font-size: 14px;
+        height: 15px;
+    }
+    
+    .judul_print_peng .judul_print_upj {
+        width: 100%;
+        font-size: 17px;
+        font-weight: bold;
+        height: 20px;
+    }
+
+    .judul_print_peng .judul_print_alamat {
+        width: 100%;
+        font-size: 10px;
+    }
+
+    /* 2 */
+    .page_print_peng .judul2_print  {
+        height: 11%;
+        width: 100%;
+        text-align: center;
+        align-content: center;
+        border-style: dotted;
+        margin-top: 1vh;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .judul2_print .jenis_laporan_print {
+        width: 100%;
+        font-size: 13px;
+    } 
+
+    .judul2_print .tanggal_print_peng {
+        width: 100%;
+        font-size: 11px;
+    }
+
+    /* keterangan laporan */
+    .page_print_peng .keterangan_print {
+        height: 22%;
+        width: 100%;
+        padding-top: 9%;
+        font-size: 12px;
+        border-style: dotted;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .keterangan_print .nama_pelanggan_print {
+        width: 100%;
+        align-content: center;
+        font-weight: bold;
+        margin-bottom: 4%;
+    }
+
+    .keterangan_print .barangjasa_print {
+        width: 100%;
+        margin-bottom: 1%;
+        align-content: center;
+    }
+
+    .keterangan_print .div_harga_print {
+        display: flex;
+        width: 96%;
+        margin-left: 2%;
+        align-content: center;
+    }
+
+    .keterangan_print .div_harga_print .jumlah_barangjasa {
+        display: flex;
+        width: 60%;
+    }
+
+    .jumlah_barangjasa .tagihan_print {
+        width: 60%;
+    }
+
+    .jumlah_barangjasa .jumlah_barangjasa_print {
+        width: 40%;
+    }
+
+    .keterangan_print .div_harga_print .total_harga_print_peng {
+        width: 40%;
+        text-align: end;
+    }
+
+    /* total */
+    .page_print_peng .total_bayar_print_peng {
+        height: 20%;
+        width: 99%;
+        padding-top: 3.5%;
+        font-size: 12px;
+        padding-left: 1.5%;
+    }
+
+    .total_bayar_print_peng .span_total_tagihan_peng,
+    .total_bayar_print_peng .span_diskon,
+    .total_bayar_print_peng .span_pajak {
+        display: flex;
+        width: 100%;
+        margin-bottom: 2%;
+    }
+
+    .total_bayar_print_peng .span_total_tagihan_peng_peng .left,
+    .total_bayar_print_peng .span_diskon .left,
+    .total_bayar_print_peng .span_pajak .left {
+        width: 50%;
+    }
+
+    .total_bayar_print_peng .span_total_tagihan_peng .right,
+    .total_bayar_print_peng .span_diskon .right,
+    .total_bayar_print_peng .span_pajak .right {
+        width: 50%;
+        text-align: end;
+    }
