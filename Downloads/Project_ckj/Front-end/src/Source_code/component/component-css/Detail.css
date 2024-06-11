@@ -1,0 +1,132 @@
+.tbl_data_pelanggan {
+    position: relative;
+    margin: 20vh 0 10vh 25vw;
+    width: calc(100% - 650px);
+    height: 70vh;
+    border-radius: 20px;
+    border: 1px solid black;
+    align-content: center;
+}
+
+.tbl_data_pelanggan .tambah_data_pelanggan {
+    width: 96%;
+    height: 96%;
+    margin-left: 2%;
+}
+
+.tambah_data_pelanggan .detail {
+    width: 100%;
+    height: 5vh;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+.tambah_data_pelanggan .div-isi {
+    width: 100%;
+    height: 9.5vh;
+    align-content: center;
+    border-bottom: 1px solid black;
+}
+
+.div-isi .ket-judul {
+    width: 100%;
+    height: 40%;
+    color: grey;
+    font-weight: 500;
+    font-size: 15.5px;
+}
+
+.div-isi .ket-keterangan {
+    width: 100%;
+    height: 40%;
+    font-size: 17px;
+}
+
+.tambah_data_pelanggan .div-pesan {
+    width: 100%;
+    height: 15vh;
+}
+
+.div-pesan .div-pesan-judul {
+    height: 4vh;
+    width: 100%;
+    margin-top: 1vh;
+    color: grey;
+    font-weight: 500;
+    align-content: center;
+}
+
+.div-pesan .div-pesan-barang {
+    height: 4.5vh;
+    width: 100%;
+    align-content: end;
+}
+
+.div-pesan .div-pesan-jumlah {
+    display: flex;
+    height: 4vh;
+    width: 100%;
+    align-content: center;
+}
+
+.div-pesan-jumlah .produk {
+    display: flex;
+    height: 4vh;
+    width: 50%;
+    align-items: center;
+}
+
+.produk .div-harga-barang,
+.produk .div-total-barang {
+    width: 50%;
+}
+
+.div-pesan-jumlah .harus-dibayar {
+    width: 50%;
+    text-align: end;
+}
+
+/* btn */
+.tambah_data_pelanggan .btn_printutup {
+    display: flex;
+    width: 100%;
+    height: 7vh;
+    justify-content: space-between;
+}
+
+.btn_printutup .btn_print,
+.btn_printutup .btn_tutup {
+    width: 45%;
+    height: 5vh;
+    margin-top: 2vh;
+}
+
+.btn_printutup .print {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: #5BC85B;
+    color: #ffffff;
+    border: none;
+}
+
+.btn_printutup .print:active {
+    background: #ffffff;
+    color: black;
+    border: 1px solid #5BC85B;
+}
+
+.btn_printutup .tutup {
+    width: 100%;
+    height: 100%;
+    color: red;
+    border-radius: 30px;
+    border: 1px solid red; 
+    background: none;
+}
+
+.btn_printutup .tutup:active {
+    background: red;
+    color: #ffffff;
+    border: none;
+}
